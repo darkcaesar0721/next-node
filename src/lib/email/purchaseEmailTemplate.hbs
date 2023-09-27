@@ -1,0 +1,64 @@
+<html>
+
+<head>
+  <title>Purchase Confirmation</title>
+</head>
+
+<body>
+  <main class="yscrollbar
+    container mx-auto rounded border border-gray-300 p-8
+    ">
+    <div id="mailctn">
+      <div id="mail">
+        <div>
+          <p>Dear Customer:</p>
+
+          <p>
+            This email confirms your purchase of a new eSIM + {{dataLimitInGB}}GB package. The
+            eSIM is valid in DNK starting {{startDate}} through
+            {{endDate}}.
+          </p>
+
+          <p>
+            To install your cellular data plan on your eSIM-enabled device
+            (e.g. iPhone XR from 2018 or newer models):
+          </p>
+
+          <ol>
+            <li>
+              Confirm your device has internet service for this installation
+              (e.g. Wi-Fi)
+            </li>
+            <li>Open the camera app and scan your QR code below</li>
+            <li>
+              Follow the prompts shown by your device to add the eSIM as
+              Secondary line for "Cellular Data"
+            </li>
+            <li>
+              Go to Settings and turn ON the "Data Roaming" of the added eSIM
+            </li>
+          </ol>
+
+          <center>
+            <p>
+                    <img
+                      loading="lazy"
+                      src="cid:image@unique.com" 
+                      alt="QR Code" />
+            </p>
+          </center>
+          <center>
+            <p>ICCID: {{iccid}}</p>
+          </center>
+
+          <p>
+            If you need assistance, please email
+            <a href="mailto:info@globe-mobi.com">info@globe-mobi.com</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
