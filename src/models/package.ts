@@ -5,6 +5,7 @@ export interface Package {
   priceInCents: number;
   id: string;
 }
+
 export interface PackageResponse {
   packages: Package[];
 }
